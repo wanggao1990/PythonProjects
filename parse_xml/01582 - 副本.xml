@@ -1,0 +1,26 @@
+<annotation>
+	<folder>绝缘子 测试集标注 做训练 0404 缺陷裁剪小图</folder>
+	<filename>01582.JPG</filename>
+	<path>F:\2、电科院电力巡检\挑选玻璃绝缘子 1\绝缘子 测试集标注 做训练 0404 缺陷裁剪小图\01582.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>721</width>
+		<height>729</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>break</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>204</xmin>
+			<ymin>178</ymin>
+			<xmax>497</xmax>
+			<ymax>438</ymax>
+		</bndbox>
+	</object>
+</annotation>

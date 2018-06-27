@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>zzz</folder>
+	<filename>01582.JPG</filename>
+	<path>E:\PycharmProjects\parse_xml\yyy\zzz\01582.xml</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>721</width>
+		<height>729</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>break</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>204</xmin>
+			<ymin>178</ymin>
+			<xmax>497</xmax>
+			<ymax>438</ymax>
+		</bndbox>
+	</object>
+</annotation>
