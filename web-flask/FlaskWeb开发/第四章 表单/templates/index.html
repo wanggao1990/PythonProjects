@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}Flasky{% endblock %}
+{% block body %}
+
+    <!-- 渲染flash消息 -->
+    <div class="container">
+        {% for message in get_flashed_messages() %}
+        <div class="alert alert-warning">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+        </div>
+        {% endfor %}
+        {% block page_content %}{% endblock %}
+    </div>
+
+    <div class="page-header">
+        <h1>Hello, {% if name %}{{ name }}{% else %}Stranger{% endif %}!</h1>
+        <a href='/boot'><b>bootstrap page</b></a>
+    </div>
+
+    <p></p><p></p>
+    {{ wtf.quick_form(form) }}
+
+{% endblock %}
+
+
+

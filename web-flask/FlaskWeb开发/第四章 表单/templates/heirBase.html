@@ -1,0 +1,23 @@
+
+<!-- extends 指令声明这个模板衍生自 base.htm -->
+{% extends "base.html" %}
+
+<!-- 基模板中的 3 个块被重新定义，title、head、body
+    模板引擎会将其插入适当的位置。-->
+
+{% block title %} Index {% endblock %}    <!--  如果放在block head中，会在页面多现实index字符？？？-->
+
+{% block head %}
+<!--  新定义的 head块，在基模板中其内容不是空的，所以使用 super() 获取原来的内容。  -->
+    {{ super() }}
+	<style>
+	</style>
+    
+	<link rel="shortcut icon" href="{{ url_for('static', filename = 'tfavicon.ico') }}" type="image/x-icon">
+	<link rel="icon" href="{{ url_for('static', filename = 'favicon.ico') }}" type="image/x-icon">
+{% endblock %}
+
+{% block body %}
+	<h1>Hello, World!</h1>
+	<a href='/boot'><b>bootstrap page</b></a>
+{% endblock %}

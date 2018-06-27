@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>user</title>
+</head>
+<body>
+
+<!-------------------------------------------------------------------->
+<!--  条件控制-->
+
+{% if user%}
+    Hello, {{ user }}!
+{% else %}
+    Hello, Stranger!
+{% endif %}
+
+
+<!-------------------------------------------------------------------->
+<!-- 渲染一组元素，  用 for 循环 -->
+
+<ul>
+    {% for comment in comments %}
+        <li>{{ comment }}</li>
+    {% endfor %}
+</ul>
+
+
+<!-------------------------------------------------------------------->
+<!--  "|"后面接过滤器，capitalize是首字母大写 -->
+<h1>Hello, {{ name|capitalize }}!</h1>
+
+<!--
+safe        渲染值时不转义
+capitalize  把值的首字母转换成大写，其他字母转换成小写
+lower       把值转换成小写形式
+upper       把值转换成大写形式
+title       把值中每个单词的首字母都转换成大写
+trim        把值的首尾空格去掉
+striptags   渲染之前把值中所有的 HTML 标签都删掉
+
+更多见 http://jinja.pocoo.org/docs/templates/#builtin-filter
+-->
+
+<a href='/'><b>Home</b></a>
+
+</body>
+</html>
